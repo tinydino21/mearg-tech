@@ -1,0 +1,19 @@
+section{
+  padding: 30px;
+}
+.achievements{
+  margin-bottom: 100px;
+}
+.project-container,
+.package-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.project-container div, 
+.package-container div{
+  border: solid 2px dodgerblue;
+  border-radius: 10px;
+  height: 200px;
+  min-width: 100px;
+}
