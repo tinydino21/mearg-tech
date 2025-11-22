@@ -8,12 +8,50 @@ section{
 .package-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 20px;
 }
-.project-container div, 
-.package-container div{
+.project-container > div{
   border: solid 2px dodgerblue;
   border-radius: 10px;
   height: 200px;
   min-width: 100px;
+}
+
+.project-container > div{
+  display: flex;
+  
+}
+
+.project-container img{
+  height: 100%;
+  border-radius: 10px;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.description a{
+  color: green;
+}
+.package-container > div{
+  border: solid 2px dodgerblue;
+  border-radius: 10px;
+  min-width: 100px;
+  min-height: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.package-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.package-color{
+  width: 150px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 50% 0 50% 0;
 }
