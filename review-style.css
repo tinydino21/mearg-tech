@@ -1,0 +1,73 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.review-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  
+}
+.reviews{
+  min-width: 150px;
+  min-height: 50px;
+  padding: 5px;
+  border: solid 1px dodgerblue;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
+}
+.profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+.reviews h4{
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.comment-section{
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
+}
+.comment-section label,
+.comment-section input,
+#comment {
+  width: 75%;
+  border-radius: 5px;
+  border: none;
+}
+#comment{
+  background-color: rgba(255, 255, 255, 0.7);;
+}
+#email{
+  height: 25px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);;
+}
+.comment-section button{
+  width: 25%;
+  border: solid 2px white;
+  background-color: green;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.comment-section button:active{
+  background-color: darkgreen;
+}
