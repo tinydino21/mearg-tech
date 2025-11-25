@@ -11,17 +11,17 @@ section{
   gap: 20px;
 }
 .project-container > div{
+  display: flex;
   border: solid 2px dodgerblue;
   border-radius: 10px;
   height: 200px;
   min-width: 100px;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
 }
 
-.project-container > div{
-  display: flex;
-  
+.package-container > div:active{
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
 }
-
 .project-container img{
   height: 100%;
   border-radius: 10px;
@@ -43,6 +43,7 @@ section{
   min-height: 200px;
   padding-left: 20px;
   padding-right: 20px;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
 }
 .package-heading{
   display: flex;
@@ -54,4 +55,28 @@ section{
   height: 40px;
   background-color: yellow;
   border-radius: 50% 0 50% 0;
+}
+.includes{
+  font-family: monospace;
+}
+
+@media(max-width: 760px){
+  section{
+    padding: 20px;
+  }
+  .project-container,
+  .package-container {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  }
+  .project-container > div{
+    flex-direction: column;
+    height: 400px;
+  }
+  .project-container img {
+  height: 80%;
+  }
+  .description a{
+    margin-bottom: 10px;
+  }
 }

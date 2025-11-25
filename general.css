@@ -42,4 +42,20 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: black;
+}
+
+@media(max-width: 760px){
+  body{
+    padding-top: 100px;
+  }
+  header{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  nav{
+    flex-direction: column;
+    gap: 5px;
+  }
 }

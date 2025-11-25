@@ -71,3 +71,12 @@ section{
 .comment-section button:active{
   background-color: darkgreen;
 }
+
+@media(max-width: 760px){
+  .review-container {
+    grid-template-columns: 1fr;
+  }
+  .comment-section{
+    width: 90%;
+  }
+}
