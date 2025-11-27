@@ -1,0 +1,67 @@
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    margin-top: 35px;
+    border: solid 1px dodgerblue;
+    border-radius: 10px;
+  }
+  .main-container{
+    display: flex;
+    position: relative;
+  }
+  
+  @keyframes spin{
+      from{}
+      to {transform: rotate(360deg);}
+    }
+    .container{
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation-name: spin;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .top-div,
+    .bottom-div{
+      width: 200px;
+      height: 100px;
+    }
+    .top-div{
+      border-radius: 100px 100px 0  0;
+      background: linear-gradient(to left, dodgerblue, black);
+    }
+    .bottom-div{
+      border-radius: 0 0 100px 100px;
+      background: linear-gradient(to right, dodgerblue, black);
+    }
+    .middle-circle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 190px;
+      height: 190px;
+      margin: 5px;
+      background-color: black;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .middle-circle img{
+      width: 95%;
+    }
+    .submission{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    @media(max-width: 760px){
+      .submission{
+        grid-template-columns: 1fr;
+      }
+    }
