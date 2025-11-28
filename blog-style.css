@@ -1,5 +1,22 @@
 section{
   padding: 20px;
+  padding-top: 0;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: solid 1px dodgerblue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.4);
+}
+.image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.image-container img{
+  width: 50%;
+  margin-right: 30px;
+  border-radius: 10px;
 }
 .company-name{
   color: dodgerblue;
@@ -10,4 +27,26 @@ section{
 }
 .golden-ai{
   font-weight: bold;
+}
+.date{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  color: #717171;
+}
+@media(max-width: 760px){
+  section{
+    margin: 15px;
+    margin-top: 40px;
+    padding: 10px;
+    border: solid 1px rgba(30,143,252, 0.7);
+  }
+  .image-container{
+    display: block;
+  }
+  .image-container img{
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
 }
