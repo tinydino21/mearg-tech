@@ -35,7 +35,8 @@ nav a{
   color: white;
 }
 nav a:hover{
-  color: dodgerblue;
+  color: green;
+  cursor: pointer;
 }
 
 
@@ -47,6 +48,9 @@ footer {
   right: 0;
   bottom: 0;
   background-color: black;
+}
+.current-page{
+  color: dodgerblue;
 }
 
 @media(max-width: 760px){
